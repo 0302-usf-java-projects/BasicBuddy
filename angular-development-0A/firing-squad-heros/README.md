@@ -1,27 +1,19 @@
-# FiringSquadHeros
+# Benjamin Franklin vs. Michael Jordan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+Let's play a quick game since we all need to finish the angular tutorial and we all need to learn github.
 
-## Development server
+Benjamin Franklin and Michael Jordan have decided to play a game of one-on-one basketball with an unusual provision. More about the provision later.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+First, let's split into two teams of two. I suggest that it would be more fun not to be on a team where your name and your partner's name could form the string "Benjamin Franklin" or "Michael Jordan". If your team has that solved, you are ready to play.
 
-## Code scaffolding
+Now, in order for the ball to go in the basket, your team must do two things:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. One partner completes and commits an angular tutorial module (there are six total) to a new github branch.
+2. The other partner merges it to the development branch.
+3. The roles swap for the next module.
 
-## Build
+Each member of a winning team will have completed three modules and pulled three merge requests.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The results should be easily tallied on github.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Anyone game?
