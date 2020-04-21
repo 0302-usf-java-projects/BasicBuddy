@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Project1Test": {
+    "firing-squad-heros": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Project1Test",
+            "outputPath": "dist/firing-squad-heros",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Project1Test:build"
+            "browserTarget": "firing-squad-heros:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Project1Test:build:production"
+              "browserTarget": "firing-squad-heros:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Project1Test:build"
+            "browserTarget": "firing-squad-heros:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Project1Test:serve"
+            "devServerTarget": "firing-squad-heros:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Project1Test:serve:production"
+              "devServerTarget": "firing-squad-heros:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Project1Test"
+  "defaultProject": "firing-squad-heros"
 }
