@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aspect="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 https://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd
+	 http://www.springframework.org/schema/aop
+	 http://www.springframework.org/schema/aop/spring-aop.xsd
+	 http://www.springframework.org/schema/tx
+	 http://www.springframework.org/schema/tx/spring-tx.xsd
+	 http://www.springframework.org/schema/mvc
+	 http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	 ">
+	
+	<context:annotation-config/>
+	<context:component-scan base-package="com.squad"/>
+	<aspect:aspectj-autoproxy/>
+	<tx:annotation-driven/>
+	<mvc:annotation-driven/>
+	
+	
+	<bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.postgresql.Driver"/>
+		<property name="url" value="jdbc:postgresql://jdatabase.cnizg9jiyt4a.us-east-2.rds.amazonaws.com:5432/project2"/>
+		<property name="username" value="firing_squad"/>
+		<property name="password" value="password"/>
+	</bean>
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="datasource"/>
+		<property name="packagesToScan" value="com.squad.model"/>
+		<property name="hibernateProperties">
+				<props>
+					<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+					<prop key="hibernate.show_sql"></prop>
+					<prop key="hibernate.formatl_sqL">true</prop>
+					<prop key="hibernate.default_schema">hiber_schema</prop>
+					 <prop key="hibernate.hbm2ddL.auto">create</prop>
+					 <!-- <prop key="hibernate.hbm2ddL.auto">update</prop> -->
+				</props>
+		
+		</property>
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	
+	
+		
+</beans>
