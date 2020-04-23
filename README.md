@@ -1,6 +1,4 @@
-# TeamFiringSquad-Project2
-
-## Style Guide
+# Style Guide
 
 Now that a majority have checked in, let's work on keeping file names consistent. The MASTER branch to this repository shows three versions of README.md:
 
