@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Firing Squad Network';
-  newsfeed = 'Newsfeed View';
+  view = 'Views';
 }
