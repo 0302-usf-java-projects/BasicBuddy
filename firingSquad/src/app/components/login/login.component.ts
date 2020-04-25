@@ -2,7 +2,8 @@ import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/users-service.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-// import { Users } from '../../models/users.model';
+import { User } from 'src/app/modals/user';
+import { HttpClientModule } from '@angular/common/http';
 // import { SessionServiceService } from '../../services/session-service.service';
 // import { NavbarService } from 'src/app/services/navbar.service';
 
@@ -49,11 +50,11 @@ export class LoginComponent implements OnInit {
     let id = null;
 
 
-    // console.log(email);
-    // console.log(password);
+    console.log(email);
+    console.log(password);
 
     // const promise = new Promise<Users>((resolve) => {
-    //   resolve(this.userService.getUser(email, password));
+    //  // resolve(this.userService.getUser(email, password));
     // });
 
     // promise.then((value) => {

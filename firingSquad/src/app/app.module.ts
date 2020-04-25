@@ -11,6 +11,11 @@ import { AnimationsComponent } from './components/animations/animations.componen
 import { MainMenuContainerComponent } from './components/main-menu-container/main-menu-container.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ProfileComponent } from './components/profile/profile.component';
+//import { ImageUploadComponent } from './components/image-upload/image-upload.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostComponent } from './components/post/post.component';
+import { AllPostsComponent } from './components/all-posts/all-posts.component';
+import { FriendListComponent } from './components/friend-list/friend-list.component';
 // import { NavComponent } from './nav/nav.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -23,13 +28,18 @@ import { ProfileComponent } from './components/profile/profile.component';
     AnimationsComponent,
     MainMenuContainerComponent,
     NavComponent,
-    ProfileComponent
+    ProfileComponent,
+    //ImageUploadComponent,
+    PostComponent,
+    AllPostsComponent,
+    FriendListComponent
     // BrowserAnimationsModule
    // NavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

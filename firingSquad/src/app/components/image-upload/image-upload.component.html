@@ -1,0 +1,18 @@
+<label class= "image-upload-container btn btn-bwm">
+    <span>Select Image</span>
+<input #imageInput
+    type = "file"
+    accept ="image/*"
+    (change)="processFile(imageInput)">
+</label>
+
+<div *ngIf="selectedFile" class="img-preview-container">
+
+    <div class="img-preview"
+    [ngStyle]="{'background-image':'url('+ selectedFile.src + ')'}">
+
+    <div *ngIf="selectedFile.status === 'ok'"class="alert alert-success">Image Uploaded Successfully</div>
+    <div *ngIf="selectedFile.statur ==='fail'" class="alert alert-danger">Image Upload Failed!</div>
+
+    </div>
+</div>

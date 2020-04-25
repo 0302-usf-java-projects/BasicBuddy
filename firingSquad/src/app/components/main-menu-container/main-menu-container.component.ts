@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/modals/user';
+import { UserService } from 'src/app/services/users-service.service';
 
 @Component({
   selector: 'app-main-menu-container',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuContainerComponent implements OnInit {
 
-  constructor() { }
+  users: User[] = [];
+
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit(): void {
   }
+
+
+  getAll(){
+    this.userService.getAllUsers().subscribe(users => this.users = users)
+;  }
 
 }
