@@ -1,0 +1,78 @@
+#mainMenu {
+  background-image:  linear-gradient(to right, rgba(32,1,34, 0.5) -23.76%, rgba(111,0,0, 0.4) 76.43%), url(https://i.pinimg.com/originals/01/38/47/013847e254bee2b33d4996894e9933fe.jpg);
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+ background-blend-mode: multiply;
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 15vh;
+
+}
+
+#logoIcon{
+  height: 52px;
+  float: left;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+#logoIcon:hover{
+  transform: translateY(-2px);
+}
+
+#logoutButton{
+  color: rgb(90, 33, 29);
+    background-color: rgb(218, 131, 0);
+    border: 10px, red;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform .3s ease-in-out;
+    float: right;
+    margin-left: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 40px;
+    margin-right:40px;
+    border-color: rgb(0, 80, 80);
+    color: rgb(51, 0, 85);
+    font-weight: bold;
+}
+
+#logoutButton:hover{
+background-color: transparent;
+color: rgb(238, 255, 0);
+transform: translateY(-1px);
+border-color: cyan;
+}
+
+#blackBar{
+  height: 4px;
+  background-color: rgb(18, 0, 36);
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 110px;
+}
+
+#iconButton{
+  position: absolute;
+  height: 50px;
+}
+
+.profileIcon{
+  height:50px;
+}
+
+.profileIcon:hover{
+  transform: translateY(-2px);
+
+}
+
+#ViewProfileText{
+  color: yellow;
+ position: absolute;
+ right: 190px;
+  top: 10px;
+}

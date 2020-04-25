@@ -1,0 +1,18 @@
+<div id="main">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <img class="logo" src="assets/SquadLogo.png"/>
+            <div class="container" id="loginContainer" [ngClass]="{'leave': animMe}">
+                <!-- Use ngSubmit to run checkLogin() on submit -->
+                 <!-- checkLogin will manage credential checking w/ DB and routing -->
+                <!-- <form [formGroup]="loginForm" (ngSubmit)="checkLogin()"> -->
+                <form>
+                 <div class="form-group text-left">
+                    <label for="emailAddress" id="emailText">Email address:</label>
+                     <input type="email" formControlName="emailAddress" class="form-control" id="emailInput"/>
+                    <label for="password" id="passText">Password:</label>
+                    <input type="password" formControlName="password" class="form-control" id="passwordInput"/>
+                    <input class="btn btn-primary" type="button" value="Log in" (click)="Login()">
+                </div>
+                </form>
+             </div>
+  </div>

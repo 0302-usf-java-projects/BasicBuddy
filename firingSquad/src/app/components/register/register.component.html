@@ -1,0 +1,29 @@
+<div class="container" id="registerContainer">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"/>
+
+
+
+  <!-- <form [formGroup]="registerForm" (ngSubmit)="register()"> -->
+  <form id="registerForm">
+    <h2>Don't have an account?</h2>
+    <br>
+    <h3>Your squad awaits!</h3>
+   <div class="form-group text-left">
+    <label for="firstName" id="firstName">First Name:</label>
+    <input type="text" formControlName="firstName" class="form-control" id="firstNameInput"/>
+<br>
+    <label for="lastName" id="lastName">Last Name:</label>
+    <input type="text" formControlName="lastName" class="form-control" id="lastNameInput"/>
+<br>
+      <label for="emailAddress" id="regEmailText">Email address:</label>
+       <input type="email" formControlName="emailAddress" class="form-control" id="regEmailInput"/>
+<br>
+      <label for="password" id="regPassText">Password:</label>
+      <input type="password" formControlName="password" class="form-control" id="regPasswordInput"/>
+<br>
+      <input class="btn btn-primary" type="submit" value="Register" id="registerButton">
+    </div>
+  </form>
+  <img class="background" src="assets/retro.jpg"/>
+
+</div>

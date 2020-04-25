@@ -1,0 +1,147 @@
+#registerContainer{
+  width: 100%;
+  position: relative;
+  height:82vh;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#registerForm{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 1;
+}
+
+.background{
+  height:82vh;
+  width:100%;
+  clip-path: polygon(38% 0, 100% 0, 100% 100%, 63% 100%);
+  z-index: 0;
+}
+
+#firstName{
+  color: rgb(207, 175, 250);
+}
+
+
+#firstNameInput{
+  background-color: rgb(35, 0, 68);
+  color: rgb(253, 249, 0);
+  border-color: cyan;
+  border-radius: 5px;
+  transition: transform .3s ease-in-out;
+  margin-top: 170px;
+  margin-right: 140px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#firstNameInput:hover {
+  background-color: rgb(29, 1, 80);
+  border-color: yellow;
+  transform: translateY(-2px)
+}
+
+#lastName{
+  color: rgb(207, 175, 250);
+}
+
+#lastNameInput{
+  background-color: rgb(35, 0, 68);
+  color: rgb(253, 249, 0);
+  border-color: cyan;
+  border-radius: 5px;
+  transition: transform .3s ease-in-out;
+  margin-top: 8px;
+  margin-right: 140px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#lastNameInput:hover {
+  background-color: rgb(29, 1, 80);
+  border-color: yellow;
+  transform: translateY(-2px)
+}
+
+#regEmailText{
+  color: rgb(207, 175, 250);
+}
+
+#regEmailInput{
+  background-color: rgb(35, 0, 68);
+  color: rgb(253, 249, 0);
+  border-color: cyan;
+  border-radius: 5px;
+  transition: transform .3s ease-in-out;
+  margin-top: 8px;
+  margin-right: 140px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#regEmailInput:hover{
+  background-color: rgb(29, 1, 80);
+  border-color: yellow;
+  transform: translateY(-2px)
+}
+
+#regPassText{
+  color: rgb(207, 175, 250);
+}
+
+#regPasswordInput{
+  background-color: rgb(35, 0, 68);
+  color: rgb(253, 249, 0);
+  border-color: cyan;
+  border-radius: 5px;
+  transition: transform .3s ease-in-out;
+  margin-top: 8px;
+  margin-right: 140px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#regPasswordInput:hover{
+  background-color: rgb(29, 1, 80);
+  border-color: yellow;
+  transform: translateY(-2px)
+}
+
+#registerButton{
+  margin-top: 12px;
+  margin-right: 170px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h3{
+  z-index: 2;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position:absolute;
+  top: 128px;
+  left: 150px;
+}
+
+h2{
+  z-index: 2;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position:absolute;
+  top: 90px;
+  left: 55px;
+
+}
+
+.form-group{
+  margin-right: 40px;
+label{
+
+  width: 130px;
+  display: inline-block;
+}
+}
