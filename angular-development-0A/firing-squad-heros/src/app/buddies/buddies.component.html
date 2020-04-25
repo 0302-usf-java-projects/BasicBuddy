@@ -1,3 +1,2 @@
-<h2>{{buddy.name}} Details</h2>
-<div><span>id: </span>{{buddy.id}}</div>
-<div><span>name: </span>{{buddy.name}}</div>
+Name: {{buddy.name | uppercase }} &nbsp; ID: {{buddy.id}} &nbsp;
+<input [(ngModel)]="buddy.name" placeholder="search for buddy"/>
