@@ -15,5 +15,9 @@ input {
         background-size: contain;
         height:116px;
         width: 116px;
+
+        & -error {
+            display: none;
+        }
     }
 }

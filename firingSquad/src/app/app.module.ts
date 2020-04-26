@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './components/post/post.component';
 import { AllPostsComponent } from './components/all-posts/all-posts.component';
 import { FriendListComponent } from './components/friend-list/friend-list.component';
+import { UserPostsComponent } from './components/user-posts/user-posts.component';
+import { ProfilePicComponent } from './components/profile-pic/profile-pic.component';
 // import { NavComponent } from './nav/nav.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -32,7 +34,9 @@ import { FriendListComponent } from './components/friend-list/friend-list.compon
     //ImageUploadComponent,
     PostComponent,
     AllPostsComponent,
-    FriendListComponent
+    FriendListComponent,
+    UserPostsComponent,
+    ProfilePicComponent
     // BrowserAnimationsModule
    // NavComponent
   ],

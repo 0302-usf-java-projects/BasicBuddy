@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-//import { ImageUploadComponent } from './image-upload.component';
+import { ImageUploadComponent } from './image-upload.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ImageService } from 'src/app/services/image.service';
@@ -16,10 +16,10 @@ import { ImageService } from 'src/app/services/image.service';
         ImageService
     ],
     exports: [
-       // ImageUploadComponent
+       ImageUploadComponent
     ],
     declarations: [
-       // ImageUploadComponent
+       ImageUploadComponent
     ]
 })
 export class ImageUploadModule {

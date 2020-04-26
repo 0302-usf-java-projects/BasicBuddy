@@ -1,14 +1,12 @@
-#allPosts{
-  width:1100px;
-  height:394px;
-  line-height:3em;
-  overflow:auto;
-  padding:5px;
+#allPosts {
+  width: 1000px;
+  height: 394px;
+  line-height: 3em;
+  overflow: auto;
+  padding: 5px;
   position: absolute;
   left: 35px;
   top: 350px;
-  background-image: linear-gradient(rgb(44, 0, 85),rgb(51, 0, 80));
+  background-image: linear-gradient(rgb(44, 0, 85), rgb(51, 0, 80));
   border-radius: 15px;
 }
-
-
